@@ -4,6 +4,7 @@ var timearray = ["9AM","10AM","11AM","12PM","1PM","2PM","3PM","4PM","5PM"]
 // converted to 24 hour so i was able to string it easier
 function onSiteLoaded(){
     // start the loop
+    $("#currentDay").text(moment())
     var currentTime = moment().hour();
     for (i=9; i<18; i++){
         $("#testarea-" + i).val(localStorage.getItem(i))
