@@ -4,7 +4,7 @@ var timer = setInterval(displayTime,1000)
 function displayTime(){
     $("#currentDay").text(moment())
 }
-// converted to 24 hour so i was able to string it easier
+// kept 24 hour so i was able to string it easier
 function onSiteLoaded(){
     // start the loop
 
@@ -22,23 +22,6 @@ function onSiteLoaded(){
                 $("#testarea-" + i).addClass("future");
             }
             // end of if statements
-
-            // giving the divs their attrs then rewriting the local data that will be stored inside them
-            // var row = $("<div>");
-            //     row.attr("class","row");
-            //     container.append(row)
-            // var label = $("<label>");
-            //     label.attr("class","col-1 time-block hour");
-            //     label.text(time[i])
-            //     row.append(label)
-            // var textArea = $("<textarea>");
-            //     textArea.attr("class", "col-10 description" + timeClass);
-            //     textArea.text(localStorage.getItem("btn" + i));
-            //     row.append(textArea);
-            // var button = $("<button>");
-            //     button.attr("class", "col-1 saveBtn fa-save fa");
-            //     button.attr("id", "btn" + i);
-            //     row.append(button);
     };
 };
 function save(event) {
